@@ -1,43 +1,57 @@
-import React from 'react'
-import { Box, Image, Text, Link } from '@chakra-ui/react'
+import React, { useState, useEffect } from 'react'
+import { Box, Image, Text, Link, Flex, Divider, Button, LinkOverlay } from '@chakra-ui/react'
 
-export default function CardLarge() {
+export default function CardLarge({ data }) {
+    // const [temperature, setTemperature] = useState(data.current.temp)
+
+
+
     return (
-        <Box mt={5}>
-            <Box p={4} display="flex" border="1px" borderRadius="10">
-                <Box flexShrink={0}>
-                    <Image
-                        borderRadius="lg"
-                        width={40}
-                        src="https://bit.ly/2jYM25F"
-                        alt="Woman paying for a purchase"
-                    />
+        <Flex justifyContent="center" >
+            <Flex padding='10px' justifyContent='center' alignItems='center' direction='column' borderWidth='medium' width='630px'>
+                <Box alignItems='center' width='600px'>
+                    <Text>Malaysia, MY</Text>
+                    <Text>Date</Text>
                 </Box>
-                <Box mt={0} ml={6}>
-                    <Text
-                        fontWeight="bold"
-                        textTransform="uppercase"
-                        fontSize="lg"
-                        letterSpacing="wide"
-                        color="orange.600"
-                    >
-                        Temperature
-    </Text>
-                    <Link
-                        mt={1}
-                        display="block"
-                        fontSize="lg"
-                        lineHeight="normal"
-                        fontWeight="semibold"
-                        href="#"
-                    >
-                        Weather
-    </Link>
-                    <Text mt={2} color="gray.500">
-                        Date
-</Text>
-                </Box>
-            </Box>
-        </Box>
+
+                <Flex direction='row'>
+                    <Flex alignItems='center' justifyContent="space-around" width='600px'>
+                        <Box>
+                            <Text fontSize='6xl'>20 C</Text>
+                            <Text fontWeight='light' color="gray.500">feels like 30C</Text>
+                        </Box>
+
+                        <Box>
+                            <Text>Gambar</Text>
+                        </Box>
+                    </Flex>
+                </Flex>
+
+                <Divider colorScheme='green' width='550px' />
+
+                <Link>
+                    <Flex direction='row' justifyContent='space-around' width='600px' >
+                        <Text>asdsa</Text>
+                        <Text>asdsa</Text>
+                        <Text>asdsa</Text>
+                    </Flex>
+                </Link>
+
+                <Link>
+                    <Flex direction='row' justifyContent='space-around' width='600px' >
+                        <Text>asdsa</Text>
+                        <Text>asdsa</Text>
+                        <Text>asdsa</Text>
+                    </Flex>
+                </Link>
+                <Link>
+                    <Flex direction='row' justifyContent='space-around' width='600px' >
+                        <Text>asdsa</Text>
+                        <Text>asdsa</Text>
+                        <Text>asdsa</Text>
+                    </Flex>
+                </Link>
+            </Flex>
+        </Flex>
     )
 }

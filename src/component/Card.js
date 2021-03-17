@@ -3,7 +3,7 @@ import { Box, Image, Text, Link } from '@chakra-ui/react'
 
 export default function Card() {
     return (
-        <Box mt={5}>
+        <Box mb='5px' padding='20px' paddingTop='0px'>
             <Box p={4} display="flex" border="1px" borderRadius="10">
                 <Box flexShrink={0}>
                     <Image
