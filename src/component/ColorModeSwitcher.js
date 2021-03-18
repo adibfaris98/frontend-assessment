@@ -15,7 +15,6 @@ export default function ColorModeSwitcher(props) {
       variant="ghost"
       color="current"
       margin="20px"
-      // border= '1px'
       onClick={toggleColorMode}
       icon={<SwitchIcon />}
       {...props}

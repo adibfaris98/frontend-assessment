@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { Flex } from '@chakra-ui/react';
+import { Flex, Box } from '@chakra-ui/react';
 import axios from 'axios'
 import CardLarge from '../component/CardLarge'
 import ColorModeSwitcher from '../component/ColorModeSwitcher'
 
 export default function Weekly() {
     const [data, setData] = useState()
-    const [date, setDate] = useState()
-    const [dailyData, setDailyData] = useState ()
 
     const getData = async () => {
         try {
@@ -23,14 +21,11 @@ export default function Weekly() {
         getData()
     }, [])
     return (
-        <div>
+        <Box>
             <Flex justifyContent="flex-end">
                 <ColorModeSwitcher />
             </Flex>
-
-            {/* {date && convertUnixToDate(date)} */}
-
-            <CardLarge data={data}/>
-        </div>
+            <CardLarge data={data} />
+        </Box>
     )
 }
