@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Overview
+
+1. This project was build using ReactJS and ChakraUI
+2. Available in light and dark mode
+3. Live version at : https://weather-forecast-phi.vercel.app/
+
+![Main Page](https://user-images.githubusercontent.com/32261116/111699478-277c3480-8873-11eb-85d6-4229f6ccbc9c.PNG)
+![Daily Page](https://user-images.githubusercontent.com/32261116/111699485-2ba85200-8873-11eb-9b25-5343d0ddfff4.PNG)
+![Main Page(light)](https://user-images.githubusercontent.com/32261116/111699495-2e0aac00-8873-11eb-8a9a-29c3f764af0c.PNG)
+![Daily Page (light)](https://user-images.githubusercontent.com/32261116/111699499-2fd46f80-8873-11eb-92ec-d6d7643ac0e7.PNG)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
