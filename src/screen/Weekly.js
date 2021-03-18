@@ -9,7 +9,7 @@ export default function Weekly() {
 
     const getData = async () => {
         try {
-            const response = await axios.get(`http://api.openweathermap.org/data/2.5/onecall?lat=4.2105&lon=101.9758&exclude=minutely,hourly,alerts&units=metric&appid=fe75d93cda4ddc5caa5d6abad0fdeb16`)
+            const response = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=4.2105&lon=101.9758&exclude=minutely,hourly,alerts&units=metric&appid=fe75d93cda4ddc5caa5d6abad0fdeb16`)
             const data = response.data
             setData(data)
         } catch (error) {

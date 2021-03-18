@@ -12,7 +12,7 @@ export default function Daily() {
 
     const getData = async () => {
         try {
-            const response = await axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=malaysia&units=metric&appid=fe75d93cda4ddc5caa5d6abad0fdeb16`)
+            const response = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=malaysia&units=metric&appid=fe75d93cda4ddc5caa5d6abad0fdeb16`)
             const data = response.data
             setData(data)
         } catch (error) {
